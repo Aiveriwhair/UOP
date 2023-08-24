@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "UOPAPP",
+    "slug": "UOPAPP",
+    "version": "1.0.0",
+    "platforms": ["ios", "android"],
+    "permissions": ["CAMERA", "AUDIO_RECORDING", "WRITE_EXTERNAL_STORAGE"],
+    "orientation": "portrait",
+    "icon": "",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "CAMERA",
+        "AUDIO_RECORDING",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "audioRecordingPermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ]
+  }
+}

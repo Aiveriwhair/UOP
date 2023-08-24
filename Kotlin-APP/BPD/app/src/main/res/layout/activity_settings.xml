@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/textViewRoi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROI 1 Position (X, Y):"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextRoi1X"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="X"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoi1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextRoi1Y"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="Y"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoi1"
+        app:layout_constraintStart_toEndOf="@+id/editTextRoi1X"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textViewRoi1Size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROI 1 Size:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRoi1X"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+    <TextView
+        android:id="@+id/textViewSeekBarMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRoi1Size"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp" />
+    <SeekBar
+        android:id="@+id/seekBarRoi1Size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoi1Size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:max="800"
+        android:min="100"
+        android:progress="300" />
+    <TextView
+        android:id="@+id/textViewSeekBarMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRoi1Size"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/textViewOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:text=" Overlay visibility :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRoi1Size" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOverlay" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@+id/switchOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

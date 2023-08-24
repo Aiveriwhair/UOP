@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.BPD" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="AppTheme.Loading" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="AppTheme.Results" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="AppTheme.Recents" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="AppTheme.Main" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="AppTheme.VideoPicker" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="AppTheme.Camera" parent="Theme.AppCompat.NoActionBar"></style>
+    <style name="AppTheme.Settings" parent="Theme.AppCompat.NoActionBar"></style>
+</resources>
